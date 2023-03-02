@@ -21,3 +21,9 @@ VALUES('Aniket',55000,'2023-03-03'),('Rajat',54000,'2023-05-06'),('Anil',52000,'
 --UC_4
 
 SELECT * FROM empolyee_payroll;
+
+--UC_5
+
+SELECT salary FROM empolyee_payroll WHERE name='Aniket';
+SELECT * FROM empolyee_payroll WHERE start BETWEEN CAST('2018-01-01'
+AS DATE) AND CAST('2023-03-03' AS DATE);
