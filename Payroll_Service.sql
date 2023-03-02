@@ -27,3 +27,8 @@ SELECT * FROM empolyee_payroll;
 SELECT salary FROM empolyee_payroll WHERE name='Aniket';
 SELECT * FROM empolyee_payroll WHERE start BETWEEN CAST('2018-01-01'
 AS DATE) AND CAST('2023-03-03' AS DATE);
+
+--UC_6
+
+ALTER TABLE empolyee_payroll ADD gender CHAR(1);
+UPDATE empolyee_payroll SET gender ='M' WHERE name='Aniket' or name = 'Rajat' or name= 'Anil';
