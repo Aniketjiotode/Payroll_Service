@@ -17,3 +17,7 @@ CREATE TABLE empolyee_payroll
 
 INSERT INTO empolyee_payroll(name,salary,start)
 VALUES('Aniket',55000,'2023-03-03'),('Rajat',54000,'2023-05-06'),('Anil',52000,'2023-04-08');
+
+--UC_4
+
+SELECT * FROM empolyee_payroll;
