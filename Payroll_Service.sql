@@ -32,3 +32,7 @@ AS DATE) AND CAST('2023-03-03' AS DATE);
 
 ALTER TABLE empolyee_payroll ADD gender CHAR(1);
 UPDATE empolyee_payroll SET gender ='M' WHERE name='Aniket' or name = 'Rajat' or name= 'Anil';
+
+--UC_7
+
+SELECT SUM(salary) AS Total_Empolyee_Salary FROM empolyee_payroll WHERE gender='M' GROUP BY gender; 
